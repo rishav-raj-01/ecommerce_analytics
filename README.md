@@ -61,6 +61,7 @@ The dashboard has two KPI cards at the top showing total orders and total revenu
 There is also a map of Brazil colored by revenue per state, and a scatter plot comparing average delivery days against average customer review score for each state, with the size of each point based on how many orders came from that state. The idea behind that chart was to see if slower delivery actually results in lower ratings, which is something the SQL notebook does not really show since it treats delivery time and reviews separately.
  
 A date filter on the side lets you narrow everything down to a specific time range across all charts at once.
+![Dashboard preview](Dashboard/Dashboard.png)
 
 ## How to run this
 
