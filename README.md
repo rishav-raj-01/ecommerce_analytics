@@ -50,6 +50,18 @@ Going through all the sections above, a few things stood out to me the most:
 
 5. Most orders fall in the medium spend range. 42% of delivered orders land in the 100 to 300 payment range, while high and very high spend orders combined make up only about 10% of all orders, so big ticket purchases are the exception, not the norm.
 
+## Dashboard
+ 
+I also built a Tableau dashboard on top of the same dataset, mainly to practice presenting the numbers visually instead of just as SQL output. You can check it out here:
+ 
+[E-Commerce Sales & Customer Experience Dashboard](https://public.tableau.com/app/profile/rishav.raj8601/viz/Book1_17854435558740/Dashboard1?publish=yes&showOnboarding=true)
+ 
+The dashboard has two KPI cards at the top showing total orders and total revenue, which update automatically depending on what state you click on the map, since I set up a filter action between the map and the rest of the dashboard. Below that there is a monthly revenue trend line, a bar chart of the top 10 product categories by revenue, and another bar chart showing revenue split by payment type (credit card, boleto, voucher, debit card).
+ 
+There is also a map of Brazil colored by revenue per state, and a scatter plot comparing average delivery days against average customer review score for each state, with the size of each point based on how many orders came from that state. The idea behind that chart was to see if slower delivery actually results in lower ratings, which is something the SQL notebook does not really show since it treats delivery time and reviews separately.
+ 
+A date filter on the side lets you narrow everything down to a specific time range across all charts at once.
+
 ## How to run this
 
 1. Download the dataset from Kaggle and place the CSV files in a folder.
